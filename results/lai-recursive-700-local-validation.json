@@ -1,0 +1,231 @@
+{
+  "benchmark": "TikTok Shop Vietnam team benchmark v1 — locked for Checkpoint 5",
+  "provider": "local",
+  "backend": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "strategy": "recursive",
+  "chunk_size": 700,
+  "chunk_count": 140,
+  "top_k": 3,
+  "metrics": {
+    "hits": 5,
+    "query_count": 5,
+    "hit_rate_at_k": 1.0,
+    "mrr": 1.0
+  },
+  "queries": [
+    {
+      "id": "Q1",
+      "query": "Người mua được gửi yêu cầu trả hàng hoặc hoàn tiền trong bao lâu sau khi đơn được giao?",
+      "gold_answer": "Người mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng mười lăm (15) ngày dương lịch sau khi trạng thái đơn hàng được cập nhật thành Đã giao hàng.",
+      "metadata_filter": {
+        "customer_role": "buyer"
+      },
+      "expected_doc_ids": [
+        "tiktok-buyer-return-eligibility"
+      ],
+      "required_terms": [
+        "mười lăm (15) ngày dương lịch",
+        "đã giao hàng"
+      ],
+      "hit_at_k": true,
+      "first_relevant_rank": 1,
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": "tiktok-buyer-return-eligibility",
+          "chunk_index": 0,
+          "score": 0.606454,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=2901402355762946",
+          "preview": "# Khi nào người mua có thể yêu cầu trả hàng hoàn tiền  18/07/2024  Áp dụng cho:Việt Nam  Chính sách hoàn trả và hoàn tiềnQuản lý trả lại và hoàn tiền  - Khung thời gian đưa ra yêu cầu trả hàng/hoàn tiền: Người mua có thể gửi yêu cầu trả hàng/hoàn tiề"
+        },
+        {
+          "rank": 2,
+          "doc_id": "tiktok-buyer-return-eligibility",
+          "chunk_index": 2,
+          "score": 0.595216,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=2901402355762946",
+          "preview": "- Yêu cầu hành động nhanh chóng: Đảm bảo rằng bạn xử lý yêu cầu trả hàng/hoàn tiền nhanh chóng trong vòng 1 ngày làm việc kể từ khi người mua gửi yêu cầu. Nếu không có hành động nào được thực hiện, yêu cầu hoàn tiền sẽ được phê duyệt tự động.  - Mô t"
+        },
+        {
+          "rank": 3,
+          "doc_id": "tiktok-buyer-return-eligibility",
+          "chunk_index": 3,
+          "score": 0.450651,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=2901402355762946",
+          "preview": "- Hoàn thiện đơn hàng hiệu quả: Đảm bảo xử lý và vận chuyển đơn hàng kịp thời để tránh các vấn đề liên quan đến giao hàng chậm trễ.  Để biết thêm thông tin, vui lòng tham khảo Hướng dẫn của TikTok Shop về việc hủy đơn, trả hàng và hoàn tiền cho đơn h"
+        }
+      ]
+    },
+    {
+      "id": "Q2",
+      "query": "Điều gì xảy ra nếu khách hàng không nhận đơn COD ba lần trong khoảng thời gian 60 ngày?",
+      "gold_answer": "TikTok Shop có quyền tạm thời tắt phương thức thanh toán COD của khách hàng trong sáu mươi (60) ngày nếu họ không nhận đơn hàng COD ba lần trong khoảng thời gian 60 ngày.",
+      "metadata_filter": null,
+      "expected_doc_ids": [
+        "tiktok-cod-policy"
+      ],
+      "required_terms": [
+        "sáu mươi (60) ngày",
+        "không nhận đơn hàng COD ba lần"
+      ],
+      "hit_at_k": true,
+      "first_relevant_rank": 1,
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": "tiktok-cod-policy",
+          "chunk_index": 6,
+          "score": 0.757578,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=10004482&role=1",
+          "preview": "TikTok Shop có quyền tạm thời tắt phương thức thanh toán COD của khách hàng trong sáu mươi (60) ngày nếu họ không nhận đơn hàng COD ba lần trong khoảng thời gian 60 ngày."
+        },
+        {
+          "rank": 2,
+          "doc_id": "tiktok-returns-refunds",
+          "chunk_index": 21,
+          "score": 0.6614,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?anchor_link=EC7C00C8&from=policy&identity=1&knowledge_id=1766935302801169&role=1",
+          "preview": "Khách hàng của tôi có bao nhiêu thời gian để gửi hàng trả lại? Khách hàng có 10 ngày theo lịch để gửi sản phẩm sau khi yêu cầu trả hàng và hoàn tiền của họ được phê duyệt. Nếu khách hàng không gửi hàng sau thời gian này, yêu cầu sẽ bị đóng và khách h"
+        },
+        {
+          "rank": 3,
+          "doc_id": "tiktok-cod-policy",
+          "chunk_index": 18,
+          "score": 0.64681,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?knowledge_id=10004482&role=1",
+          "preview": "- Nếu người bán không xử lý yêu cầu trong khoảng thời gian 48 giờ và trạng thái đơn hàng vẫn là \"Chờ vận chuyển – Chờ lấy hàng\", yêu cầu sẽ được phê duyệt tự động. - Tuy nhiên, nếu trạng thái đơn hàng được cập nhật thành \"Đã vận chuyển\" trong khoảng "
+        }
+      ]
+    },
+    {
+      "id": "Q3",
+      "query": "Quy trình và thời hạn để người bán kháng nghị một hành động thực thi như thế nào?",
+      "gold_answer": "Người bán có thể gửi tối đa hai kháng nghị. Kháng nghị đầu tiên phải nộp trong vòng 30 ngày từ thông báo hành động thực thi; kháng nghị thứ hai phải nộp trong vòng mười lăm (15) ngày từ ngày kháng nghị đầu tiên bị từ chối.",
+      "metadata_filter": {
+        "customer_role": "seller"
+      },
+      "expected_doc_ids": [
+        "tiktok-seller-performance-policy"
+      ],
+      "required_terms": [
+        "tối đa hai kháng nghị",
+        "trong vòng 30 ngày",
+        "mười lăm (15) ngày"
+      ],
+      "hit_at_k": true,
+      "first_relevant_rank": 1,
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": "tiktok-seller-performance-policy",
+          "chunk_index": 22,
+          "score": 0.754937,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?course_type=1&identity=1&knowledge_id=10015235&role=1",
+          "preview": "- Sau đó, Nền tảng sẽ điều tra trường hợp này và thực hiện hành động khắc phục nếu thích hợp.   - Xin lưu ý rằng việc gửi kháng nghị không đảm bảo rằng Người bán sẽ kháng nghị thành công.  ## 8.1 Quy trình kháng nghị  - Người bán có thể gửi tối đa ha"
+        },
+        {
+          "rank": 2,
+          "doc_id": "tiktok-seller-performance-policy",
+          "chunk_index": 23,
+          "score": 0.70708,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?course_type=1&identity=1&knowledge_id=10015235&role=1",
+          "preview": "- Điểm AHR phát sinh từ mỗi hành động vi phạm sẽ được xóa tự động sau 90 ngày theo lịch, trừ khi Người bán đã tích lũy đủ 48 điểm.  - Tất cả các kháng nghị được đưa ra sau các mốc thời gian quy định ở trên không phải là kháng nghị hợp lệ và sẽ không "
+        },
+        {
+          "rank": 3,
+          "doc_id": "tiktok-seller-performance-policy",
+          "chunk_index": 24,
+          "score": 0.652755,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?course_type=1&identity=1&knowledge_id=10015235&role=1",
+          "preview": "- Trong thời gian không quá chậm trễ, chúng tôi sẽ thông báo cho Người bán về quyết định của Nền tảng liên quan đến kháng nghị của họ.  - Nếu Người bán kháng nghị thành công, Nền tảng sẽ xóa mọi hình phạt đã ban hành và/hoặc khôi phục mọi đặc quyền đ"
+        }
+      ]
+    },
+    {
+      "id": "Q4",
+      "query": "Muốn đăng bán mỹ phẩm thuộc nhóm hạn chế thì người bán cần chuẩn bị và thể hiện những thông tin, tài liệu gì?",
+      "gold_answer": "Cần thông báo về sản phẩm mỹ phẩm và hình ảnh nhãn bao bì có tên sản phẩm, chức năng, hướng dẫn sử dụng, thành phần, tên và quốc gia xuất xứ, kích thước/thành phần/khối lượng tịnh, ngày hết hạn và cảnh báo/thận trọng.",
+      "metadata_filter": {
+        "customer_role": "seller"
+      },
+      "expected_doc_ids": [
+        "tiktok-restricted-products"
+      ],
+      "required_terms": [
+        "thông báo về sản phẩm mỹ phẩm",
+        "hình ảnh nhãn bao bì"
+      ],
+      "hit_at_k": true,
+      "first_relevant_rank": 1,
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": "tiktok-restricted-products",
+          "chunk_index": 1,
+          "score": 0.757284,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?default_language=en&knowledge_id=7179954358388497",
+          "preview": "- Đối với danh mục này, người bán phải cung cấp thông tin chi tiết cụ thể về sản phẩm và tài liệu chứng minh rằng sản phẩm an toàn cho khách hàng, đồng thời tuân thủ luật pháp và quy định liên quan.   ##### ❗ Tài liệu được yêu cầu  - Thông báo về sản"
+        },
+        {
+          "rank": 2,
+          "doc_id": "tiktok-restricted-products",
+          "chunk_index": 0,
+          "score": 0.614028,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?default_language=en&knowledge_id=7179954358388497",
+          "preview": "# Sản phẩm bị hạn chế  14/07/2026  Áp dụng cho:Việt Nam  Hạn chế niêm yếtQuản lý sản phẩm  ### Sản phẩm bị hạn chế là gì?   Sản phẩm bị hạn chế là những sản phẩm cần phải được TikTok Shop phê duyệt trước thì mới được phép bán. Chúng tôi có thể yêu cầ"
+        },
+        {
+          "rank": 3,
+          "doc_id": "tiktok-seller-performance-policy",
+          "chunk_index": 16,
+          "score": 0.60171,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?course_type=1&identity=1&knowledge_id=10015235&role=1",
+          "preview": "- Ngăn chặn lưu lượng truy cập của người dùng đối với quảng cáo, buổi phát trực tiếp, video và sản phẩm được niêm yết của người bán  - Xóa quyền đủ điều kiện để được đề xuất trong Trung tâm mua sắm đối với sản phẩm được niêm yết của người bán.  - Áp "
+        }
+      ]
+    },
+    {
+      "id": "Q5",
+      "query": "Điểm AHR bị trừ thường được tự động xóa sau bao lâu, và ngoại lệ nào khiến quy tắc này không áp dụng?",
+      "gold_answer": "Điểm tình trạng tài khoản (AHR) bị trừ do vi phạm sẽ được tự động xóa sau mỗi 90 ngày trừ khi cửa hàng của Người bán đã bị nền tảng đóng, tức là Điểm tình trạng tài khoản (AHR) = 0.",
+      "metadata_filter": {
+        "customer_role": "seller"
+      },
+      "expected_doc_ids": [
+        "tiktok-seller-performance-policy"
+      ],
+      "required_terms": [
+        "tự động xóa sau mỗi 90 ngày",
+        "cửa hàng của người bán đã bị nền tảng đóng"
+      ],
+      "hit_at_k": true,
+      "first_relevant_rank": 1,
+      "results": [
+        {
+          "rank": 1,
+          "doc_id": "tiktok-seller-performance-policy",
+          "chunk_index": 3,
+          "score": 0.73236,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?course_type=1&identity=1&knowledge_id=10015235&role=1",
+          "preview": "- Số điểm AHR bị trừ tương ứng với mức độ nghiêm trọng và tác động của các vi phạm chính sách.  - Khi điểm tình trạng tài khoản (AHR) của Người bán đạt đến các ngưỡng được quy định trong Mục 5 dưới đây, Nền tảng sẽ thực hiện hành động thực thi tương "
+        },
+        {
+          "rank": 2,
+          "doc_id": "tiktok-seller-performance-policy",
+          "chunk_index": 23,
+          "score": 0.677041,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?course_type=1&identity=1&knowledge_id=10015235&role=1",
+          "preview": "- Điểm AHR phát sinh từ mỗi hành động vi phạm sẽ được xóa tự động sau 90 ngày theo lịch, trừ khi Người bán đã tích lũy đủ 48 điểm.  - Tất cả các kháng nghị được đưa ra sau các mốc thời gian quy định ở trên không phải là kháng nghị hợp lệ và sẽ không "
+        },
+        {
+          "rank": 3,
+          "doc_id": "tiktok-seller-performance-policy",
+          "chunk_index": 12,
+          "score": 0.599772,
+          "source_url": "https://seller-vn.tiktok.com/university/essay?course_type=1&identity=1&knowledge_id=10015235&role=1",
+          "preview": "- Lưu giữ Buyer PII vượt quá nhu cầu thực hiện đơn hàng. PII phải được xóa hoặc ẩn danh hóa không chậm trễ một khi giao dịch và thời hạn trả hàng/khiếu nại áp dụng (nếu có) đã kết thúc.  # 5. Hệ thống Cột mốc thực thi  Khi xảy ra hành vi động phạm cá"
+        }
+      ]
+    }
+  ]
+}

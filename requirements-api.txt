@@ -1,0 +1,2 @@
+# Optional API embedding backends used by the group benchmark.
+openai>=1.0.0

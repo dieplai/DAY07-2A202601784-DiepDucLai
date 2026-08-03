@@ -17,6 +17,7 @@ from .embeddings import (
 )
 from .models import Document
 from .store import EmbeddingStore
+from .strategies import MarkdownHeadingChunker
 
 __all__ = [
     "Document",
@@ -27,6 +28,7 @@ __all__ = [
     "compute_similarity",
     "EmbeddingStore",
     "KnowledgeBaseAgent",
+    "MarkdownHeadingChunker",
     "MockEmbedder",
     "LocalEmbedder",
     "OpenAIEmbedder",

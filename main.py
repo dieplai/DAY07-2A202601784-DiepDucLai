@@ -19,7 +19,7 @@ from src.embeddings import (
 
 # Thư mục dữ liệu mặc định cho demo = bộ khởi động cố định của lớp K4.
 # Đổi bằng biến môi trường: LAB_DATA_DIR=data/<thu-muc-cua-nhom> python3 main.py
-DEFAULT_DATA_DIR = "data/k4_ecommerce"
+DEFAULT_DATA_DIR = "data/tiktok_shop_policies"
 
 
 def _select_embedder():
